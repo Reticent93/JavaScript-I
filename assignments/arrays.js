@@ -63,7 +63,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-console.log(`Car 33 is a  `${inventory[32]}`.car_year `${inventory[32]}` );
+console.log(Car 33 is a   `${inventory[32].car_year}`  `${inventory[32].car_model}`);
 
 
 // ==== Challenge 2 ====
@@ -74,7 +74,8 @@ console.log(carModels.sort());
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 for(let i = 0; i<inventory.length; i++) {
-    if(carModels.push{inventory[i].car_model}
+    carModels.push(inventory[i].car_model)
+
 }
 let carModels = [];
 console.log();
@@ -92,7 +93,7 @@ console.log(carYears.sort());
 let oldCars = [];
 for(let i=0; i<carYears.length; i++) {
     if(carYears[i] < 2000){
-    oldCars.push{carYears[i]};
+    oldCars.push(carYears[i]);
 }
 }
 console.log(oldCars.length); 
@@ -106,7 +107,7 @@ for(let i = 0; i < inventory.length; i++){
     BMWAndAudi.push(inventory[i]);
 }
 }
-console.log();
+console.log(JSON.stringify{BMWAndAudi});
 
 
 
